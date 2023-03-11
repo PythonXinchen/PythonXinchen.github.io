@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>欣某的小站</title>
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #f0f0f0;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                line-height: 2.3
+            }
+
+        a {
+            color: #20a53a
+        }
+    </style>
+		<h3 style="font-size: 25px;
+    text-align: center;>随机一言</h3>
+			<hr align=center width=100% color=#987cb9 SIZE=1 />
+			<br>
+			<div class="hitokoto" style="font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+">
+				<script type='text/javascript'>
+					$.get("https://v1.hitokoto.cn/",function(data,status){
+										    if (status == 'success'){
+										        $('.hitokoto').text(data.hitokoto+"By:"+data.from);
+										    }else{
+										        $('.hitokoto').text('获取出错！');
+										    }
+										});
+				</script>
+			</div>
+
+</head>
+<body>
+    <div class="container">
+        <h1>欢迎来到欣某的小站awa</h1>
+		<h3>这里没什么好看的，快走罢</h3><hr>
+		<a href="http://bgjqfl.free.yzy1.top/files/同步助手1.0setup.exe">我为我自己代言（）点击下载 同步助手</a>
+    </div>
+			<hr align=center width=100% color=#987cb9 SIZE=1 />
+			<h3 style="font-size: 25px;
+    text-align: center;
+    color: #00008b;">
+				<span id="span"></span>
+			</h3>
+			<script type="text/javascript">
+				function runtime(){
+				        // 初始时间，日/月/年 时:分:秒
+				        X = new Date("3/5/2023 19:37:00");
+				        Y = new Date();
+				        T = (Y.getTime()-X.getTime());
+				        M = 24*60*60*1000;
+				        a = T/M;
+				        A = Math.floor(a);
+				        b = (a-A)*24;
+				        B = Math.floor(b);
+				        c = (b-B)*60;
+				        C = Math.floor((b-B)*60);
+				        D = Math.floor((c-C)*60);
+				        //信息写入到DIV中
+				        span.innerHTML = "本站勉强运行<br> "+A+"天"+B+"小时"+C+"分"+D+"秒"
+				    }
+				    setInterval(runtime, 1000);
+			</script>
+</body>
+</html>
