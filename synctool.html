@@ -74,6 +74,26 @@
           color: #333;
           padding: 20px;
           text-align: center;
+        }
+	.alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
         }</style>
 </head>
 <body>
@@ -103,9 +123,10 @@
             <ul>
                 <li><a href="/同步助手1.0setup.exe">Windows</a></li>
             </ul>
-	<div class="alert alert-warning" role="alert">
-  		请注意，同步助手当前是测试版本，不适合使用在生产环境！
-	</div>
+	<div class="alert">
+        	<span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        	<strong>警告！</strong> 这是一个警告框。
+        </div>
         </section>
         <section>
             </ul>
