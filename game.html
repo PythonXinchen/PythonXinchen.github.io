@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>猜数字游戏</title>
+</head>
+<body>
+    <h1>猜数字游戏</h1>
+    <p>我想了一个 1 到 100 的数字，你需要猜出来它是什么。</p>
+    <input type="text" id="guessInput">
+    <button id="guessButton">提交猜测</button>
+    <div id="resultArea"></div>
+
+    <script>
+        window.onload = function() {
+            var answer = Math.floor(Math.random() * 100) + 1;
+            var guessInput = document.getElementById("guessInput");
+            var guessButton = document.getElementById("guessButton");
+            var resultArea = document.getElementById("resultArea");
+
+            guessButton.addEventListener("click", function() {
+              var guess = parseInt(guessInput.value);
+              if (guess < answer) {
+                resultArea.textContent = "猜小了";
+              } else if (guess > answer) {
+                resultArea.textContent = "猜大了";
+              } else {
+                resultArea.textContent = "恭喜你猜对了！";
+              }
+            });
+        };
+    </script>
+</body>
+</html>
