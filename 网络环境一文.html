@@ -1,0 +1,122 @@
+<!DOCTYPE html><!-- saved from url=(0032)https://pythonxinchen.github.io/ -->
+<html>
+
+<head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>欣某的小站</title>
+    <style>
+        body {
+background: url(favicon.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-o-background-size: cover;                
+background-size: cover;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            background-color: #ffffff;
+            padding: 2% 5%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            color: #000000;
+            margin-bottom: 0;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 24px;
+            color: #666666;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #dddddd;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        ul li {
+            line-height: 2.3;
+            color: #666666;
+        }
+
+        a {
+            color: #20a53a;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #1c7d29;
+        }
+
+        .runtime {
+            text-align: center;
+            font-size: 24px;
+            color: #00008b;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        #span {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #20a53a;
+            color: #ffffff;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>欢迎来到欣某的小站awa</h1>
+        <h3>这里没什么好看的，快走罢</h3>
+        <hr>
+        <ul>
+            <li><a href="https://pythonxinchen.github.io/synctool.html">同步助手官方链接</a></li>
+            <li><a href="/3DCube.html">3D正方体旋转</a></li>
+            <li><a href="/game.html">猜数字小游戏</a></li>
+            <li><a href="http://bgjqfl.free.yzy1.top/">虚拟主机站</a></li>
+            <li><a href="https://xiaozmax.top/">芸志云-虚拟主机专业提供商</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="runtime"> <span id="span"></span></div>
+    <script type="text/javascript">
+        function runtime(){
+                // 初始时间，日/月/年 时:分:秒
+                X = new Date("3/5/2023 19:37:00");
+                Y = new Date();
+                T = (Y.getTime()-X.getTime());
+                M = 24*60*60*1000;
+                a = T/M;
+                A = Math.floor(a);
+                b = (a-A)*24;
+                B = Math.floor(b);
+                c = (b-B)*60;
+                C = Math.floor((b-B)*60);
+                D = Math.floor((c-C)*60);
+                //信息写入到DIV中
+                span.innerHTML = "本站勉强运行<br> "+A+"天"+B+"小时"+C+"分"+D+"秒"
+            }
+            setInterval(runtime, 1000);
+    </script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.js"></script>
+    <script src="https://myhkw.cn/api/player/demo" id="myhk" key="demo" skin="player" lr="l" m="1"></script>
